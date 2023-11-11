@@ -1,16 +1,16 @@
 import React from 'react';
 import styles from './PaginationButton.module.css';
-import {PaginationButtonTypes} from './PaginationButton.types';
+import {PaginationButtonType} from './PaginationButton.type.ts';
 
-const PaginationButton: React.FC<PaginationButtonTypes> = ({page, currentPage, label, clickHandler, children}) => {
+const PaginationButton: React.FC<PaginationButtonType> = ({target, currentPage, label, clickHandler, children}) => {
 
-  const activeClass = page === currentPage ? styles.active : '';
+  const activeClass = target === currentPage ? styles.active : '';
 
   return (
-      <button key={page}
+      <button key={target}
               className={`${styles.button} ${activeClass}`}
               aria-label={label}
-              onClick={() => clickHandler(page)}>
+              onClick={() => clickHandler(target)}>
         {children}
       </button>
   );
