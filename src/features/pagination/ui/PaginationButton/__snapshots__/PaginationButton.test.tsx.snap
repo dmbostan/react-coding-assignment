@@ -1,0 +1,12 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`PaginationButton > should match snapshot 1`] = `
+<DocumentFragment>
+  <button
+    aria-label="Page 1"
+    class="_button_045c1d "
+  >
+    Click Me
+  </button>
+</DocumentFragment>
+`;
