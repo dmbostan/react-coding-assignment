@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.prettierrc.js
+.eslintrc.cjs
+vitest.setup.ts
+env.d.ts
