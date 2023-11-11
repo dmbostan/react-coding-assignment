@@ -18,7 +18,7 @@ export default defineConfig({
             {find: '@pages', replacement: path.resolve(__dirname, 'src/pages')},
         ],
     },
-    base: '/react-boilerplate',
+    base: '/search-results',
     test: {
         environment: 'jsdom',
         globals: true,
