@@ -1,11 +1,11 @@
 import React from 'react';
-import {PaginationTypes} from "@features/pagination/ui/Pagination/Pagination.types.ts";
+import {PaginationType} from "./Pagination.type.ts";
 import styles from './Pagination.module.css';
 import PaginationButton from "@features/pagination/ui/PaginationButton/PaginationButton.tsx";
 import getInitialRangeOfPages from "@shared/utils/getInitialRangeOfPages.ts";
 import {ButtonTarget} from "@features/pagination/ui/PaginationButton/PaginationButton.type.ts";
 
-const Pagination: React.FC<PaginationTypes> = ({items, currentPage, setCurrentPage}) => {
+const Pagination: React.FC<PaginationType> = ({items, currentPage, setCurrentPage}) => {
 
     const maxPages = items.length;
     const maxPagesToShow = 3

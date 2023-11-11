@@ -1,5 +1,5 @@
 import Pagination from './Pagination';
-import {render, fireEvent, getByTestId} from '@testing-library/react';
+import {render, fireEvent} from '@testing-library/react';
 import {PaginationButtonType} from "@features/pagination/ui/PaginationButton/PaginationButton.type.ts";
 
 vi.mock('../PaginationButton/PaginationButton', () => ({
@@ -8,7 +8,7 @@ vi.mock('../PaginationButton/PaginationButton', () => ({
             <button
                 key={props.target}
                 data-testid={`pagination-button-${props.target}`}
-                onClick={props.clickHandler}
+                onClick={props.clickHandler as () => void}
             >
                 Mocked Button
             </button>
