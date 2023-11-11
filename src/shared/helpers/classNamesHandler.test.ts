@@ -1,4 +1,4 @@
-import classNamesHandler from '@shared/utils/classNamesHandler.ts';
+import classNamesHandler from '@shared/helpers/classNamesHandler.ts';
 
 describe('classNamesHandler', function () {
   it('should display both class names', () => {

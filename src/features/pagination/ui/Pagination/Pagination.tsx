@@ -2,7 +2,7 @@ import React from 'react';
 import {PaginationType} from "./Pagination.type.ts";
 import styles from './Pagination.module.css';
 import PaginationButton from "@features/pagination/ui/PaginationButton/PaginationButton.tsx";
-import getInitialRangeOfPages from "@shared/utils/getInitialRangeOfPages.ts";
+import getInitialRangeOfPages from "@shared/helpers/getInitialRangeOfPages.ts";
 import {ButtonTarget} from "@features/pagination/ui/PaginationButton/PaginationButton.type.ts";
 
 const Pagination: React.FC<PaginationType> = ({items, currentPage, setCurrentPage}) => {
