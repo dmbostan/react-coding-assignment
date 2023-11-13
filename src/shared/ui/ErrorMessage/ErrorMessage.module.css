@@ -1,9 +1,7 @@
 .errorMessage {
-    background-color: var(--color-error);
-    color: var(--color-white);
-    text-align: center;
-    padding: 1.5rem;
-    font-size: 2rem;
+  background-color: var(--color-error);
+  color: var(--color-white);
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 2rem;
 }
-
-

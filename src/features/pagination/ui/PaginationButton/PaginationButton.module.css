@@ -1,18 +1,18 @@
 .button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 34px;
-    height: 34px;
-    margin: 0 8px;
-    padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  margin: 0 8px;
+  padding: 0;
 
-    background-color: transparent;
-    border: 2px solid var(--color-light);
-    border-radius: var(--size-radius);
-    cursor: pointer;
+  background-color: transparent;
+  border: 2px solid var(--color-light);
+  border-radius: var(--size-radius);
+  cursor: pointer;
 }
 
 .button.active {
-    background-color:  var(--color-light);
+  background-color: var(--color-light);
 }

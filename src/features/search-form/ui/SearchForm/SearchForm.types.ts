@@ -1,3 +1,3 @@
 export type SearchFormTypes = {
-    setSearchTerm: (value: string) => void
-}
+  setSearchTerm: (value: string) => void;
+};

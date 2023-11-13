@@ -1,25 +1,25 @@
 .searchResult {
-    margin-bottom: 3rem;
-    border: 2px solid var(--color-light);
-    border-radius: var(--size-radius);
+  margin-bottom: 3rem;
+  border: 2px solid var(--color-light);
+  border-radius: var(--size-radius);
 }
 .searchResult:hover {
-    border-color: var(--color-secondary);
+  border-color: var(--color-secondary);
 }
 
 .image {
-    display: inline-flex;
-    height: 260px;
-    border-radius: var(--size-radius);
+  display: inline-flex;
+  height: 260px;
+  border-radius: var(--size-radius);
 }
 
 img {
-    object-fit: cover;
-    object-position: center;
-    height: auto;
-    max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+  height: auto;
+  max-width: 100%;
 }
 
 .details {
-    padding: 0 16px;
+  padding: 0 16px;
 }

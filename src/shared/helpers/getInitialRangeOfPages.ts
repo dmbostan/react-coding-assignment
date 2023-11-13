@@ -1,10 +1,9 @@
 const getInitialRangeOfPages = (maxPages: number, pagesTowShow: number) => {
+  if (maxPages <= pagesTowShow) {
+    return maxPages;
+  }
 
-    if (maxPages <= pagesTowShow) {
-        return maxPages;
-    }
+  return pagesTowShow;
+};
 
-    return pagesTowShow;
-}
-
-export default getInitialRangeOfPages
+export default getInitialRangeOfPages;

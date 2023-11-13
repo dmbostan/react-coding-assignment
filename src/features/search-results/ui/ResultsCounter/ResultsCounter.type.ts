@@ -1,4 +1,4 @@
-export type ResultsCounterType= {
-    totalFound: number,
-    searchTerm: string
-}
+export type ResultsCounterType = {
+  totalFound: number;
+  searchTerm: string;
+};

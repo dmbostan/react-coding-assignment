@@ -1,21 +1,19 @@
 .searchResults {
-    display: grid;
-    gap: 32px;
-    max-width: var(--size-container);
-    margin: 3rem auto;
-    padding: 0 2rem;
+  display: grid;
+  gap: 32px;
+  max-width: var(--size-container);
+  margin: 3rem auto;
+  padding: 0 2rem;
 }
 
 @media screen and (min-width: 640px) {
-    .searchResults {
-        grid-template-columns: repeat(2, 50%);
-    }
+  .searchResults {
+    grid-template-columns: repeat(2, 50%);
+  }
 }
 
 @media screen and (min-width: 1260px) {
-    .searchResults {
-        grid-template-columns: repeat(4, 25%);
-    }
+  .searchResults {
+    grid-template-columns: repeat(4, 25%);
+  }
 }
-
-
