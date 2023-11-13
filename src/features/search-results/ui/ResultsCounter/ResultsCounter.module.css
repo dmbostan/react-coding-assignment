@@ -1,1 +1,7 @@
-.ResultsCounter {}
+.resultsCounter {
+    width: 100%;
+    max-width: var(--size-container);
+    margin: 3rem auto;
+    padding: 0 2rem;
+    text-align: center;
+}
