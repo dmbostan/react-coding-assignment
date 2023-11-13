@@ -1,4 +1,4 @@
-type TeaserImage = {
+export type TeaserImage = {
     width: number,
     src: string
 }
