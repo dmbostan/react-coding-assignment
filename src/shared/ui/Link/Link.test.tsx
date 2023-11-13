@@ -56,7 +56,7 @@ describe('Link component', () => {
     expect(linkElement.className).toContain(className);
   });
 
-  it('matches snapshot', () => {
+  it('should match snapshot', () => {
     const url = 'https://example.com';
     const text = 'Example Link';
 

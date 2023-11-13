@@ -12,12 +12,12 @@ vi.mock('@shared/hooks/useResults.tsx', () => ({
 }));
 
 describe('Search', () => {
-  it('renders the Search component', () => {
+  it('should render the Search component', () => {
     const { getByText } = render(<Search />);
     expect(getByText('Search')).toBeInTheDocument();
   });
 
-  it('displays an error message when there is an error', () => {
+  it('should display an error message when there is an error', () => {
     vi.resetModules();
     vi.mock('@shared/hooks/useResults.tsx', () => ({
       default: () => ({

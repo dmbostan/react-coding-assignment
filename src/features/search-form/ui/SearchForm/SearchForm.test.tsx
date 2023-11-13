@@ -2,7 +2,7 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import SearchForm from './SearchForm.tsx';
 
 describe('SearchForm', () => {
-  it('renders search input and submit button', () => {
+  it('should render search input and submit button', () => {
     render(<SearchForm setSearchTerm={() => {}} />);
 
     const searchInput = screen.getByLabelText('Search');
@@ -12,7 +12,7 @@ describe('SearchForm', () => {
     expect(submitButton).toBeInTheDocument();
   });
 
-  it('updates user input on search input change', () => {
+  it('should update user input on search input change', () => {
     render(<SearchForm setSearchTerm={() => {}} />);
 
     const searchInput: HTMLInputElement = screen.getByLabelText('Search');
@@ -22,7 +22,7 @@ describe('SearchForm', () => {
     expect(searchInput.value).toBe('test query');
   });
 
-  it('calls setSearchTerm with the correct user input on form submit', () => {
+  it('should call setSearchTerm with the correct user input on form submit', () => {
     const setSearchTermMock = vi.fn();
     render(<SearchForm setSearchTerm={setSearchTermMock} />);
 

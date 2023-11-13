@@ -2,7 +2,7 @@ import { render, screen, act } from '@testing-library/react';
 import ErrorMessage from './ErrorMessage';
 
 describe('ErrorMessage', () => {
-  it('renders with the provided error message', () => {
+  it('should render with the provided error message', () => {
     const errorMessage = 'This is an error message';
     render(<ErrorMessage error={errorMessage} />);
 
@@ -10,7 +10,7 @@ describe('ErrorMessage', () => {
     expect(errorMessageElement).toBeInTheDocument();
   });
 
-  it('hides itself after 5 seconds', () => {
+  it('should hide itself after 5 seconds', () => {
     vi.useFakeTimers(); // Mock the timers
 
     const errorMessage = 'This is an error message';

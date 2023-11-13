@@ -33,9 +33,9 @@ const SearchResult: React.FC<ArticleType> = ({ title, description, teaser_image_
             {title}
           </Link>
         </Heading>
-        <div>
+        <Paragraph>
           Published on <time dateTime={date} /> {humanReadableDate}.
-        </div>
+        </Paragraph>
         <Paragraph>
           {shortenStringToWords(description, 30)}
         </Paragraph>

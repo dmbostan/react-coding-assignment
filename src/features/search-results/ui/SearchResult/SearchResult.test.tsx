@@ -14,7 +14,7 @@ const mockArticleData = {
 };
 
 describe('SearchResult component', () => {
-  it('renders the SearchResult component with correct data', () => {
+  it('should render the SearchResult component with correct data', () => {
     const { getByText, getByAltText, container } = render(<SearchResult {...mockArticleData} />);
 
     expect(getByText('Example Article')).toBeInTheDocument();
