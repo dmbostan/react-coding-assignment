@@ -1,0 +1,21 @@
+.pagination {
+  margin: 3rem auto;
+  width: 100%;
+  max-width: var(--size-container);
+  display: flex;
+  justify-content: center;
+}
+
+.pagination > span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  margin: 0 8px;
+  padding: 0;
+}
+
+.pagination > span {
+  border: none;
+}

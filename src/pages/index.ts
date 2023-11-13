@@ -1,1 +1,1 @@
-export { default as Placeholder } from './Placeholder/Placeholder.tsx';
+export { default as Search } from './Search/Search.tsx';
