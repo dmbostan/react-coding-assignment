@@ -21,7 +21,7 @@ describe('SearchResult component', () => {
     expect(getByText('This is an example article description.')).toBeInTheDocument();
 
     const dateElement = getByText((content, element) => {
-      return element?.tagName.toLowerCase() === 'div' && content.includes('Published on');
+      return element?.tagName.toLowerCase() === 'p' && content.includes('Published on');
     });
 
     expect(dateElement).toBeInTheDocument();

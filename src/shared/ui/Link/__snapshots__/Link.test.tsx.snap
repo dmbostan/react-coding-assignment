@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Link component > matches snapshot 1`] = `
+exports[`Link component > should match snapshot 1`] = `
 <DocumentFragment>
   <a
     class="_link_4e35b2"
