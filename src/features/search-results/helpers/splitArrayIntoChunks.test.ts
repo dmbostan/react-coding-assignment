@@ -1,4 +1,4 @@
-import splitArrayIntoChunks from "@features/search-form/helpers/splitArrayIntoChunks.ts";
+import splitArrayIntoChunks from "@features/search/helpers/splitArrayIntoChunks.ts";
 
 describe('splitArrayIntoChunks function', () => {
     it('should split an array into chunks of the specified size', () => {
