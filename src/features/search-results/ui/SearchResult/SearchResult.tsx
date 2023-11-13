@@ -2,10 +2,11 @@ import React from 'react';
 import styles from './SearchResult.module.css';
 import shortenStringToWords from '@shared/helpers/shortenStringToWords.ts';
 import { ArticleType } from '@shared/types/Article.type.ts';
+import Heading from "@shared/ui/Heading/Heading.tsx";
 
 const SearchResult: React.FC<ArticleType> = ({ title, description, teaser_image_urls, date, link }) => {
   const dateInstance = new Date(date);
-  const humanReadableDate = dateInstance.toLocaleDateString('en-GB', {
+  const humanReadableDate = dateInstance.toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
@@ -25,11 +26,11 @@ const SearchResult: React.FC<ArticleType> = ({ title, description, teaser_image_
         </a>
       )}
       <div className={styles.details}>
-        <h3>
+        <Heading as="h3">
           <a href={link} title={title} aria-label={label}>
             {title}
           </a>
-        </h3>
+        </Heading>
         <div>
           Published on <time dateTime={date} /> {humanReadableDate}.
         </div>
