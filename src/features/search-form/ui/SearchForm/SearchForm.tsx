@@ -21,7 +21,7 @@ const SearchForm: React.FC<SearchFormTypes> = ({ setSearchTerm}) => {
           <input type="search" id="search-input"  className={styles.searchInput} name="search" placeholder="Search..." aria-label="Search"
                  onChange={(event) =>  handleSearchInput(event.target.value)}
           />
-          <button type="submit" className={styles.searchSubmit} onClick={() =>  handleSubmit(userInput)}>
+          <button type="submit" className={styles.searchSubmit} role="button" aria-label="Submit" onClick={() =>  handleSubmit(userInput)}>
               Search <SearchIcon className={styles.searchIcon} />
           </button>
       </div>

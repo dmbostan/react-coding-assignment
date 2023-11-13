@@ -13,15 +13,17 @@ const SearchResults: React.FC<SearchResultsTypes> = ({results}) => {
 
     return (
         <>
-            <main className={styles.searchResults}>
-                {articlesToShow.map((article) => {
-                    return (
-                        <SearchResult key={article.identifier} {...article} />
-                    )
-                })}
-            </main>
-            {results &&
-                <Pagination items={paginatedResults} currentPage={currentPage} setCurrentPage={setCurrentPage}/>}
+            {results && <>
+                <main className={styles.searchResults}>
+                    {articlesToShow.map((article) => {
+                        return (
+                            <SearchResult key={article.identifier} {...article} />
+                        )
+                    })}
+                </main>
+
+                <Pagination items={paginatedResults} currentPage={currentPage} setCurrentPage={setCurrentPage}/>
+            </>}
         </>
     );
 };
