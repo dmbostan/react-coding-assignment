@@ -2,7 +2,7 @@
 
 # Aloha, fellow front-end developer! 
 
-Not much to say about this. Just practising my rusty skills.
+Not much to say about this. Just practicing my rusty skills.
 
 
 
