@@ -35,6 +35,7 @@
   color: var(--color-white);
   text-transform: uppercase;
   font-family: inherit;
+  cursor: pointer;
 }
 
 .searchIcon {
