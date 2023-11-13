@@ -3,6 +3,7 @@ import styles from './SearchResult.module.css';
 import shortenStringToWords from '@shared/helpers/shortenStringToWords.ts';
 import { ArticleType } from '@shared/types/Article.type.ts';
 import Heading from "@shared/ui/Heading/Heading.tsx";
+import Paragraph from "@shared/ui/Paragraph/Paragraph.tsx";
 
 const SearchResult: React.FC<ArticleType> = ({ title, description, teaser_image_urls, date, link }) => {
   const dateInstance = new Date(date);
@@ -34,7 +35,9 @@ const SearchResult: React.FC<ArticleType> = ({ title, description, teaser_image_
         <div>
           Published on <time dateTime={date} /> {humanReadableDate}.
         </div>
-        <p>{shortenStringToWords(description, 30)}</p>
+        <Paragraph>
+          {shortenStringToWords(description, 30)}
+        </Paragraph>
       </div>
     </article>
   );
