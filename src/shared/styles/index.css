@@ -1,18 +1,37 @@
 :root {
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   --color-primary: #006CFF;
   --color-secondary: #61DEA4;
   --color-light: #EBEFF5;
-  --color-text: #455f7c;
+  --color-text: #252A31;
+  --color-white: #fff;
+
+  --color-error: #F45E6D;
 
   --size-container: 1160px;
   --size-radius: 4px;
 }
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
