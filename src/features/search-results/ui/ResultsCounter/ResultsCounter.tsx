@@ -11,7 +11,7 @@ const ResultsCounter: React.FC<ResultsCounterType> = ({ totalFound, searchTerm }
         </h1>
     );
   } else {
-    return (<h1 className={styles.resultsCounter}>Please enter a search term. Maybe use "Statista" ?</h1>)
+    return (<h1 className={styles.resultsCounter}>Please enter a search term. Maybe use: Statista ?</h1>)
   }
 
 

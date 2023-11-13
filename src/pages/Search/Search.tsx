@@ -1,4 +1,4 @@
-import React, {memo} from 'react';
+import React from 'react';
 import SearchForm from "@features/search-form/ui/SearchForm/SearchForm.tsx";
 import {API_ENDPOINT} from "@features/search-results/constants.ts";
 import SearchResults from "@features/search-results/ui/SearchResults/SearchResults.tsx";
@@ -27,4 +27,4 @@ const Search: React.FC = () => {
     );
 };
 
-export default memo(Search);
+export default Search;
