@@ -28,12 +28,3 @@ body {
   margin: 0;
   padding: 0;
 }
-
-a {
-  color: var(--color-primary);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}

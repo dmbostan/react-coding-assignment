@@ -4,6 +4,7 @@ import shortenStringToWords from '@shared/helpers/shortenStringToWords.ts';
 import { ArticleType } from '@shared/types/Article.type.ts';
 import Heading from "@shared/ui/Heading/Heading.tsx";
 import Paragraph from "@shared/ui/Paragraph/Paragraph.tsx";
+import Link from "@shared/ui/Link/Link.tsx";
 
 const SearchResult: React.FC<ArticleType> = ({ title, description, teaser_image_urls, date, link }) => {
   const dateInstance = new Date(date);
@@ -22,15 +23,15 @@ const SearchResult: React.FC<ArticleType> = ({ title, description, teaser_image_
   return (
     <article className={styles.searchResult}>
       {imageSrc && (
-        <a className={styles.image} href={link} aria-label={label}>
+        <Link className={styles.image} href={link} aria-label={label}>
           <img src={imageSrc} alt={title} width={imageWidth} height="260" />
-        </a>
+        </Link>
       )}
       <div className={styles.details}>
         <Heading as="h3">
-          <a href={link} title={title} aria-label={label}>
+          <Link href={link} aria-label={label}>
             {title}
-          </a>
+          </Link>
         </Heading>
         <div>
           Published on <time dateTime={date} /> {humanReadableDate}.

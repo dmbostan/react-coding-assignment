@@ -25,7 +25,7 @@ describe('SearchResult component', () => {
     });
 
     expect(dateElement).toBeInTheDocument();
-    expect(dateElement.textContent).toContain('11 November 2023');
+    expect(dateElement.textContent).toContain('November 11, 2023');
 
     const image = getByAltText('Example Article');
     expect(image).toBeInTheDocument();
