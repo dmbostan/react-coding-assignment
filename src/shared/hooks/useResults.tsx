@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import {AxiosResponseType} from "@pages/Search/Search.types.ts";
+import {AxiosResponseType} from "@pages/Search/Search.type.ts";
 import {ArticleType} from "@shared/types/Article.type.ts";
 import axios from "axios";
 

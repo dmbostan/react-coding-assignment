@@ -12,5 +12,5 @@ export type ArticleType = {
     date: string,
     premium: number,
     image_url: string,
-    teaser_image_urls: TeaserImage[]
+    teaser_image_urls: TeaserImage[],
 }

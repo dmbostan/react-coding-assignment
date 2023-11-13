@@ -1,5 +1,5 @@
 import {ArticleType} from "@shared/types/Article.type.ts";
 
-export type SearchResultsTypes = {
+export type SearchResultsType = {
     results: ArticleType[],
 }
